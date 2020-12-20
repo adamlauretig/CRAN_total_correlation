@@ -24,7 +24,7 @@ triplets <- merge( triplets, reverse, all.x = 'true', by = 'reverse')
 triplets <- merge( triplets, type, all.x = 'true', by = 'type')
 triplets <- merge( triplets, to, all.x = 'true', by = 'to')
 triplets <- merge( triplets, from, all.x = 'true', by = 'from')
-triplets[, pmi := log(pr_n) - log(pr_n_from * pr_n_to * pr_n_type)]
+triplets[, pmi := log(pr_n) - log(pr_n_from * pr_n_to * pr_n_type * pr_n_reverse)]
 
 from_stan <- triplets[ from == 'rstan'][ order(pmi)]
 tops <- from_stan[from_stan[, .I[which.max(pmi)], by=.(type, reverse)]$V1]
