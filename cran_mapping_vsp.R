@@ -45,4 +45,6 @@ nearest_pkgs(pkg_name = 'rstan', mat1 = (embeddings))
 nearest_pkgs(pkg_name = 'brms', mat1 = (embeddings))
 nearest_pkgs(pkg_name = 'rstanarm', mat1 = (embeddings))
 nearest_pkgs(pkg_name = 'RcppEigen', mat1 = (embeddings))
-nearest_pkgs(pkg_name = 'RcppArmadillo', mat1 = (embeddings))
+nearest_pkgs(pkg_name = 'tidybayes', mat1 = (embeddings))
+
+nearest_pkgs(pkg_name = 'tidyverse', mat1 = (embeddings))
